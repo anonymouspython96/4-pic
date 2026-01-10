@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* 
+        --------------
+        FONT FAMILIES
+        --------------
+    */
+    --titles: font-family: "Young Serif", serif;
+    --paragraphs: font-family: "Ancizar Serif", serif;
+    /*
+        --------------
+        COLOR PALETTE
+        --------------
+    */
+    --onyx: #0c090dff;
+    --wyx: #EBECED;
+    --amaranth: #e01a4fff;
+    --tomato: #f15946ff;
+    --tuscan-sun: #f9c22eff;
+    --pacific-blue: #53b3cbff;
+}
+
+body {
+    background-color: var(--wyx);
+    color: var(--onyx);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--onyx);
+    color: var(--wyx);
+}
