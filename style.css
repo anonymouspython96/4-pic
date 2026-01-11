@@ -51,6 +51,7 @@ header {
 img {
     width: clamp(80px, 1vw + 2rem, 100px);
     height: clamp(80px, 1vw + 2rem, 100px);
+    border-radius: 50%;
 }
 
 button {
