@@ -1,7 +1,15 @@
-const btn = document.getElementById("toggle-dark-mode"); 
+// Hoisting 
+const btnTheme = document.getElementById("toggle-theme")
+const favicon = document.querySelector('link[rel="icon"]')
 
-btn.addEventListener("click", toggleDarkMode);
+// events
+btnTheme.addEventListener("click", toggleTheme)
 
-function toggleDarkMode() {
-    document.body.classList.toggle("dark-mode");
+// functions
+function toggleTheme() {
+    
+    const isDark = document.body.classList.toggle("toggle-theme")
+
+    favicon.href = isDark ? "./Logos/white_logo.png" : "./Logos/black_logo.png"
+
 }
