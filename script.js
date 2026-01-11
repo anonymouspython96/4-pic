@@ -7,9 +7,11 @@ btnTheme.addEventListener("click", toggleTheme)
 
 // functions
 function toggleTheme() {
-    
-    const isDark = document.body.classList.toggle("toggle-theme")
 
+    const isDark = document.body.classList.toggle("toggle-theme")
+    
     favicon.href = isDark ? "./Logos/white_logo.png" : "./Logos/black_logo.png"
+    
+    btnTheme.classList.toggle("btn-theme")
 
 }

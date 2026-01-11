@@ -44,3 +44,13 @@ body.toggle-theme {
     background-color: var(--onyx);
     color: var(--wyx);
 }
+
+button {
+    background-color: var(--onyx);
+    color: var(--wyx);
+} 
+
+button.btn-theme {
+    background-color: var(--wyx);
+    color: var(--onyx);
+}
